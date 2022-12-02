@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light: #f4f4f4;
+  --white: #fff;
+  --primary: #007acc;
+  --gray: #ccc;
+  --background: #f0f6fc;
+  --black: #000;
+  --dark-gray: #8d97ad;
+}
+
+body {
+  background: var(--background);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* REGISTER SECTION */
+
+.card {
+  max-width: 380px !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.register-section {
+  background: var(--background);
+  margin-top: 50px;
+  height: 100%;
+}
+
+.form-logo {
+  width: 150px;
+  margin-left: 25%;
+}
+
+.register-section .form-body {
+  max-width: 400px;
+}
+
+.register-section .form-body .card-title {
+  font-size: 1.2rem;
+}
+
+.divider-text {
+  position: relative;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.divider-text span {
+  padding: 7px;
+  font-size: 12px;
+  position: relative;
+  z-index: 2;
+}
+.divider-text::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  top: 55%;
+  left: 0;
+  z-index: 1;
+}
+
+.btn-facebook {
+  background-color: #405d9d;
+  color: #fff;
+}
+
+.btn-facebook:hover {
+  background: #4a6ebb;
+}
+
+.btn-google {
+  background-color: #db4437;
+  color: #fff;
+  margin-bottom: 1.2rem;
+}
+
+.btn-google:hover {
+  background-color: #ff402e;
+}
+
+/*##### OVERIDE #### */
+.form-control {
+  outline: none !important;
+  border: 1.8px solid var(--gray) !important;
+  transition: all 0.5s ease;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.form-control:focus {
+  border: 1.8px solid var(--primary) !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+/* ################ */
+
+.register-section form input[type='text'] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 13px;
+  padding-right: 0px;
+  color: var(--black);
+  background: var(--white);
+  text-align: left;
+}
+
+.register-section form input::placeholder {
+  font-size: 1rem;
+  color: var(--dark-gray);
+}
+
+/* END OF REGISTER SECTION */
+
+/* LOGIN */
+.main-section {
+  max-width: 380px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+  margin-bottom: 30px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.main-section .title {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 0.9rem;
+}
+
+.main-section .social_icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.social_icons a {
+  display: block;
+  height: 45px;
+  width: 100%;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+
+.social_icons a span {
+  margin-left: 5px;
+  font-size: 18px;
+}
+
+.social_icons a:first-child {
+  margin-right: 5px;
+  background: #db4437;
+}
+
+.social_icons a:first-child:hover {
+  background: #ff402e;
+}
+
+.social_icons a:last-child {
+  margin-left: 5px;
+  background: #4a6ebb;
+}
+
+.social_icons a:last-child:hover {
+  background: #0d8bd9;
+}
+
+form {
+  margin-top: 25px;
+}
+
+.input_box {
+  height: 50px;
+  width: 100%;
+  position: relative;
+  margin-top: 15px;
+}
+
+.input_box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: 1.8px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 45px;
+  font-size: 17px;
+  transition: all 0.3s ease;
+}
+
+.input_box input[type=text] {
+    text-align: left;
+    color: var(--black);
+}
+
+.input_box input:focus {
+  border-color: var(--primary);
+}
+
+.input_box .icon {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  color: grey;
+}
+
+.option_div {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.option_div .check_box {
+  display: flex;
+  align-items: center;
+}
+
+.option_div span {
+  margin-left: 5px;
+  font-size: 16px;
+  color: #333;
+}
+
+.option_div .forget_div a {
+  font-size: 16px;
+  color: var(--primary);
+}
+
+.button input {
+  padding-left: 0;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.button input:hover {
+  background: #0d8bd9;
+}
+
+.sign_up {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.sign_up a {
+  color: var(--primary);
+}
+
+form a {
+  text-decoration: none;
+}
+
+form a:hover {
+  text-decoration: none;
+}
+
+.policy {
+  padding-left: 24px;
+}
+
+.agreement {
+  padding-left: 7px;
+}

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.min.css">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/login-form.css">
+    <link rel="stylesheet" href="css/scroll.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <title>C Lanser - Register</title>
+</head>
+
+<body>
+    <div id="progress">
+        <span id="progress-value"><i class="fas fa-angle-double-up icon"></i></span>
+      </div>
+
+    <!-- NAVBAR -->
+    <nav class="main-nav navbar navbar-expand-md fixed-top navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img class="nav-logo" src="img/Logo2.png" alt="Logo" /></a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navcollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navcollapse">
+                <ul class="nav-ul navbar-nav ml-auto">
+                    <li class="nav-li nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-li nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+
+                    <li class="nav-li nav-item dropdown hover">
+                        <a href="category.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Category</a>
+                        <div class="dropdown-menu">
+                            <a href="cooks.html" class="dropdown-item">Cooks</a>
+                            <a href="cleaners.html" class="dropdown-item">Cleaners</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-li nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+
+                    <li class="nav-li nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+
+                    <li class="nav-li nav-item">
+                        <a href="login.html" class="nav-link mx-md-3 d-none d-md-inline-block">Log In</a>
+                    </li>
+                </ul>
+
+                <a href="login.html" class="reg-btn d-md-none">Log In</a>
+
+                <a href="register.html" class="reg-btn">Register</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- REGISTRATION FORM -->
+    <section class="register-section">
+        <div class="container">
+            <div class="card bg-light">
+
+                <div class="card-body form-body mx-auto">
+                    <img src="img/Logo2.png" alt="logo" class="form-logo">
+                    <h4 class="card-title mt-3 text-center">Create Account</h4>
+                    <p class="text-center">Get started by creating an account</p>
+                    <p>
+                        <a href="https://google.com" target="blank" class="btn btn-block btn-google"> <i
+                                class="fab fa-google"></i> Continue with Google</a>
+                        <a href="https://facebook.com" target="blank" class="btn btn-block btn-facebook"> <i
+                                class="fab fa-facebook-f"></i> Continue with facebook</a>
+                    </p>
+                    <p class="divider-text">
+                        <span class="bg-light">OR</span>
+                    </p>
+
+                    <!-- <form> -->
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                        </div>
+                        <input name="" id="name" class="form-control" placeholder="Fullname" type="text">
+                    </div> <!-- form-group// -->
+                    <div id="name_error" class="val_error"></div>
+
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                        </div>
+                        <input name="" id="email" class="form-control" placeholder="Email address" type="email">
+                    </div> <!-- form-group// -->
+                    <div id="email_error" class="val_error"></div>
+
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+                        </div>
+                        <select class="custom-select form-control"
+                            style="max-width: 100px; height: 35px; outline: none !important;">
+                            <option selected="">+234</option>
+                            <option value="1">+972</option>
+                            <option value="2">+198</option>
+                            <option value="3">+701</option>
+                        </select>
+                        <input name="" class="form-control" placeholder="Phone number" type="text">
+                    </div> <!-- form-group// -->
+
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-building"></i> </span>
+                        </div>
+                        <select class="form-control">
+                            <option selected=""> Select account type</option>
+                            <option>Freelancer</option>
+                            <option>Hirer</option>
+                        </select>
+                    </div> <!-- form-group end.// -->
+
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                        </div>
+                        <input class="form-control" id="password" placeholder="Create password" type="password">
+                    </div> <!-- form-group// -->
+                    <div id="password_error" class="val_error"></div>
+
+                    <div class="form-group input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                        </div>
+                        <input class="form-control" id="conpassword" placeholder="Confirm password" type="password">
+                    </div> <!-- form-group// -->
+                    <div id="conpassword_error" class="val_error"></div>
+
+                    <div class="check_box mb-3">
+                        <input type="checkbox">
+                        <span class="agreement">I agree to the C-lancer <a href="users_agreement.html"
+                                target="blank">User Agreement</a> <span class="policy">and</span> <a href="privacy-poliicy.html" target="blank">Privacy Policy</a></span>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block" onclick="validate()"> Create
+                            Account </button>
+                    </div> <!-- form-group// -->
+
+                    <p class="text-center"> Already have an account? <a href="login.html">Log In</a> </p>
+                    <!-- </form> -->
+                </div>
+            </div> <!-- card.// -->
+
+        </div>
+    </section>
+    <!--container end.//-->
+
+    <!-- END OF REGISTRATION FORM -->
+
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer-1">
+        <div class="main-footer widgets-dark typo-light">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget subscribe no-box">
+                            <h5 class="widget-title"><a href="index.html"><img class="nav-logo" src="img/Logo light.png"
+                                        alt="Logo" /><span></span></a></h5>
+                            <p>C-Lanser is the best freelansing website to hire a cook and also a cleaner and also get
+                                to be hired
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Quick Links<span></span></h5>
+                            <ul class="thumbnail-widget">
+                                <li>
+                                    <div class="font-weight-light"><a href="about.html">&nbsp;About Us</a></div>
+                                </li>
+                                <li>
+                                    <div class="font-weight-light"><a href="category.html">&nbsp;Category</a></div>
+                                </li>
+                                <li>
+                                    <div class="font-weight-light"><a href="services.html">&nbsp;Services</a></div>
+                                </li>
+                                <li>
+                                    <div class="font-weight-light"><a href="contact.html">&nbsp;Contact</a></div>
+                                </li>
+                                <li>
+                                    <div class="font-weight-light"><a href="login.html">&nbsp;Dashboard</a></div>
+                                </li>
+                                <li>
+                                    <div class="font-weight-light"><a href="register.html">&nbsp;Register</a></div>
+                                </li>
+                                <!-- <li> -->
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget no-box">
+                            <h5 class="widget-title push">Follow up<span></span></h5>
+                            <ul class="social-network social-circle">
+                                <li><a href="http://facebook.com" target="blank" class="icoFacebook" title="Facebook"><i
+                                            class="fab fa-facebook icons"></i></a></li>
+                                <li><a href="http://twitter.com" target="blank" class="icoTwitter" title="Twitter"><i
+                                            class="fab fa-twitter icons"></i></a></li>
+                                <li><a href="http://linkedin.com" target="blank" class="icoLinkedin" title="Linkedin"><i
+                                            class="fab fa-linkedin icons"></i></a></li>
+                                <li><a href="http://instagram.com" target="blank" class="icoLinkedin"
+                                        title="Linkedin"><i class="fab fa-instagram icons"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="widget no-box">
+                            <h5 class="widget-title push">Terms<span></span></h5>
+                            <ul class="thumbnail-widget">
+                                <li>
+                                    <div class="font-weight-light"><a href="privacy-poliicy.html" target="blank">&nbsp;
+                                            Privacy Policy</a></div>
+                                </li>
+                                <li>
+                                    <div class="font-weight-light"><a href="users_agreement.html" target="blank">&nbsp;
+                                            User's Agreement</a></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Newsletter<span></span></h5>
+                            <p>Keep up with the latest news from us.</p>
+                            <div class="emailfield">
+                                <form name="contact" method="POST" data-netlify="true">
+                                <input type="text" name="email" placeholder="Enter your email">
+                                <!-- <input name="uri" type="hidden" value="arabiantheme"> -->
+                                <!-- <input name="loc" type="hidden" value="en_US"> -->
+                                <input class="submitbutton ripplelink" type="submit" value="Subscribe">
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="p-20">Copyright &copy; <span id="year"></span>. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <!-- <script src="js/jquery-1.12.0.min.js"></script> -->
+</body>
+
+</html>

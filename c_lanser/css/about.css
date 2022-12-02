@@ -1,0 +1,333 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --light: #f4f4f4;
+  --white: #fff;
+  --primary: #007acc;
+  --gray: #ccc;
+  --background: #f0f6fc;
+  --black: #000;
+  --dark-gray: #8d97ad;
+}
+
+/* ABOUT SHOWCASE */
+#about_showcase {
+  background: url(../img/banner.svg) center center/cover no-repeat;
+  margin-top: 60px;
+  padding: 2rem 0rem;
+	max-height: 300px;
+}
+
+#about_showcase .title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#about_showcase .title > p {
+  color: var(--white);
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+#about_showcase .title > p .p-small {
+  font-size: 1.2rem;
+}
+/* END OF ABOUT SHOWCASE */
+
+/* SECTION 1 */
+.section-1 {
+  padding-top: 2rem;
+  margin-bottom: 40px;
+  background: var(--background);
+}
+.section-1 .title > h3 > span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  width: 50px;
+  border-bottom: 2px solid var(--primary);
+  margin: 0 auto;
+}
+
+.section-1 .item {
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto;
+}
+
+/* .section-1 .item .item-1 {
+    flex-basis: 100%;
+} */
+
+/* .section-1 .item .item-2{
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 1rem;
+} */
+
+.section-1 .item .item-2 img {
+  max-width: 100%;
+  height: auto;
+  padding-top: 10px;
+}
+
+/* END OF SECTION 1 */
+#section-2 {
+  background: var(--white);
+}
+
+#section-2 .cards {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#section-2 .cards .card-1 .box,
+#section-2 .cards .card-2 .box,
+#section-2 .cards .card-3 .box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  border-top: 5px solid var(--primary);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 1rem;
+  flex-grow: 1;
+  max-width: 570px;
+  margin-bottom: 2rem;
+  height: auto;
+}
+
+#section-2 .cards .card-1 .card .cnt > h3,
+#section-2 .cards .card-2 .card .cnt > h3,
+#section-2 .cards .card-3 .card .cnt > h3 {
+  font-size: 1.25rem;
+}
+
+#section-2 .cards .card-1 .card .img,
+#section-2 .cards .card-2 .card .img,
+#section-2 .cards .card-3 .card .img {
+  margin-right: 1rem;
+}
+
+#section-2 .cards .card-1 .card .img img {
+  max-width: 48px;
+  max-height: 48px;
+}
+
+#section-2 .cards .card-2 {
+  align-self: center;
+}
+
+#section-2 .cards .card-3 {
+  align-self: end;
+}
+
+/* CONTACT SECTION */
+#contact_showcase {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/contact.jpg) 10% 34%/cover no-repeat;
+  margin-top: 60px;
+  padding: 5rem 0rem;
+	max-height: 300px;
+}
+
+#contact_showcase .head {
+  text-align: center;
+  color: var(--white);
+}
+
+#contact_showcase .head > p {
+	font-size: 3rem;
+}
+
+.contact-section .title-section .contact-title {
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.contact-section .title-section .contact-subtitle {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.contact-section .contact-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px -15px;
+}
+
+.contact-section .contact-block .block-1,
+.contact-section .contact-block .block-2,
+.contact-section .contact-block .block-3 {
+  background: #252525;
+  color: #fff;
+  padding: 30px;
+  border-bottom: 1px solid var(--gray);
+}
+
+.contact-section .contact-block .block-1 .round {
+  font-size: 24px;
+  color: #fff;
+  background: var(--primary);
+  text-align: center;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  position: relative;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-section .contact-block .block-1 .round .icon > icon {
+  margin-top: 2px;
+}
+
+.contact-section .contact-block .block-1 > h4 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.contact-section .contact-block .block-1 > p {
+  text-align: center;
+}
+
+.contact-form {
+  background: url(../img/map-image.png) center center/cover no-repeat;
+}
+
+.contact-form .contact-heading {
+  margin: 20px 0;
+}
+
+.contact-form .contact-heading > div h3 {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  text-align: center;
+  padding: 0px !important;
+}
+
+.contact-form .contact-heading > div p {
+  font-size: 1rem;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  color: var(--black);
+  text-align: left;
+  border: 2px solid var(--gray);
+  padding: 10px 0px 10px 10px;
+  transition: border-color 1s ease-in-out;
+  outline: none;
+  margin: 0;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+}
+
+.contact-form .form-group .form-control-email,
+.contact-form .form-group .form-control-message {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--black);
+  border-radius: 0.25rem;
+}
+
+.contact-form .form-group .form-control-message {
+  margin-bottom: 40px;
+}
+
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus {
+  border-color: var(--primary);
+}
+
+.contact-form .form-group input::placeholder,
+.contact-form .form-group textarea::placeholder {
+  color: var(--primary);
+  font-style: italic;
+}
+
+.contact-section .title-section > h2 > span::after,
+.contact-form .form-head > h3 > span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 80px;
+  border-bottom: 2.5px solid var(--primary);
+  margin: 0 auto;
+}
+
+.contact-section .title-section > h2 > span::after {
+  bottom: -2px;
+}
+
+.contact-form .form-head > h3 > span::after {
+  bottom: 2px;
+}
+
+.contact-form .form-head {
+  margin-bottom: 20px;
+}
+
+.contact-form .btn-submit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-form .btn-submit > button {
+  border: none;
+  font-weight: 600;
+  background: var(--primary);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 60px;
+}
+
+.contact-form .btn-submit > button:hover {
+  background: #005a96;
+}
+
+
+@media (max-width: 320px) {
+  #contact_showcase .head > p {
+    font-size: 1.8rem;
+  }
+}
+
+
+@media (max-width: 529px) {
+  #about_showcase .title > p {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  
+  #about_showcase .title > p .p-small {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 557px) {
+  #about_showcase .title > p {
+    font-size: 1.5rem;
+  }
+}

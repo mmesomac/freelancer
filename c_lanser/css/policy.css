@@ -1,0 +1,61 @@
+:root {
+  --light: #f4f4f4;
+  --white: #fff;
+  --primary: #007acc;
+  --gray: #ccc;
+  --background: #f0f6fc;
+  --black: #000;
+  --dark-gray: #8d97ad;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+h6{
+    font-size: 9px;
+    font-weight: bold;
+}
+
+section .title {
+    margin-top: 5rem;
+}
+
+section {
+    margin-bottom: 10rem;
+}
+
+
+/* User's Agreement */
+.agreement-section {
+    margin-top: 6rem;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}

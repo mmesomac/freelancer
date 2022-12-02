@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.min.css">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="css/scroll.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <title>C Lanser - Cooks</title>
+</head>
+
+<body>
+    <div id="progress">
+        <span id="progress-value"><i class="fas fa-angle-double-up icon"></i></span>
+      </div>
+
+    <!-- NAVBAR -->
+    <nav class="main-nav navbar navbar-expand-md fixed-top navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img class="nav-logo" src="img/Logo2.png" alt="Logo" /></a>
+
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navcollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navcollapse">
+                <ul class="nav-ul navbar-nav ml-auto">
+                    <li class="nav-li nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+
+                    <li class="nav-li nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+
+                    <li class="nav-li nav-item dropdown hover">
+                        <a href="category.html" class="nav-link dropdown-toggle active" data-toggle="dropdown">Category</a>
+                        <div class="dropdown-menu">
+                            <a href="cooks.html" class="dropdown-item">Cooks</a>
+                            <a href="cleaners.html" class="dropdown-item">Cleaners</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-li nav-item">
+                        <a href="services.html" class="nav-link">Services</a>
+                    </li>
+
+                    <li class="nav-li nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+
+                    <li class="nav-li nav-item">
+                        <a href="login.html" class="nav-link mx-md-3 d-none d-md-inline-block">Log In</a>
+                    </li>
+                </ul>
+
+                <a href="login.html" class="reg-btn d-md-none">Log In</a>
+
+                <a href="register.html" class="reg-btn">Register</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- About Us -->
+
+    <!-- SHOWCASE -->
+    <section id="cook-showcase">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 head">
+                    <h1>COOKS</h1>
+                    <p>Find and Hire Cooks</p>
+                    <p>We have over one million cooks offering one million cooking services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SHOWCASE END -->
+
+    <!-- FREELANCERS SECTION -->
+    <section id="freelancer-section" class="mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-4 left-box mb-4">
+                    <div class="left-content shadow">
+                        <div class="filter">
+                            <h3 class="filter-title">Filter </h3>
+                            <p class="filter-sub"><a href=""> Reset filter </a></p>
+                        </div>
+
+                        <!-- <label for="standard-select" class="select-title font-weight-bold">Sort</label>
+                        <div class="select mb-4">
+                            <select id="standard-select">
+                                <option value="Select">Sort By</option>
+                                <option value="Option 2"> <span>Date: New to Old</span> </option>
+                                <option value="Option 3"> <span>Date: Old to New</span> </option>
+                            </select>
+                            <span class="focus"></span>
+                        </div> -->
+
+                        <div class="keyword mt-3">
+                            <h3 class="keyword-title font-weight-bold">Keyword</h3>
+                        </div>
+                        <div class="form-group input-group mb-4">
+                            <input name="" class="form-control" placeholder="Enter Keyword Here" type="text">
+                            <div class="input-group-append input_box">
+                                <span class="input-group-text"> <a href="#"> <i class="fa fa-search search-icon"></i>
+                                    </a></span>
+                            </div>
+                        </div>
+
+                        <div class="location">
+                            <h3 class="location-title font-weight-bold">Specific Location </h3>
+                        </div>
+                        <div class="form-group input-group mb-4">
+                            <input name="" class="form-control" placeholder="Add location" type="text">
+                            <div class="input-group-append input_box">
+                                <span class="input-group-text"><i class="fa fa-location-dot"></i></span>
+                            </div>
+                        </div>
+                        
+
+                        <div class="location">
+                            <h3 class="location-title font-weight-bold">Periodicity </h3>
+                        </div>
+                        <div name="" id="Periodicity" class="mb-4">
+                            <input type="checkbox" id="year" name="year" value="Yearly">
+                            <label for="year"> Yearly</label> &nbsp;
+                            <input type="checkbox" id="monthly" name="monthly" value="monthly">
+                            <label for="monthly">monthly</label> &nbsp;
+                            <input type="checkbox" id="week" name="week" value="Weekly">
+                            <label for="week">Weekly</label> &nbsp;
+                            <input type="checkbox" id="Day" name="Day" value="Daily">
+                            <label for="week">Daily</label> &nbsp;
+                        </div>
+
+                        <label for="standard-select" class="select-title font-weight-bold">Hourly Rate (NGN)</label>
+                        <div class="select mb-4">
+                            <select id="standard-select">
+                                <option value="Select">Select Here</option>
+                                <option value="Option 2"> <span> less than &#8358;5,000 per hour</span> </option>
+                                <option value="Option 3"> <span> &#8358;5,000 - &#8358;10,000 per hour</span> </option>
+                                <option value="Option 4"> <span> &#8358;10,000 - &#8358;20,000 per hour</span> </option>
+                                <option value="Option 5"> <span> &#8358;20,000 - &#8358;30,000 per hour</span> </option>
+                                <option value="Option length"> <span> More than &#8358;30,000 per hour</span> </option>
+                            </select>
+                            <span class="focus"></span>
+                        </div>
+
+                        <div class="location">
+                            <h3 class="location-title font-weight-bold">Gender </h3>
+                        </div>
+                        <div name="" id="Gender" class="mb-3">
+                            <input type="checkbox" id="Male" name="Male" value="Male">
+                            <label for="Male"> Male</label> &nbsp;
+                            <input type="checkbox" id="Female" name="Female" value="Female">
+                            <label for="Female">Female</label> &nbsp;
+                        </div>
+
+                        <div class="location">
+                            <h3 class="font-weight-bold location-title">Rating</h3>
+                        </div>
+                        <div class="rating">
+                            <input type="radio" id="star5" name="rating" value="5" /><label for="star5"></label>
+                            <input type="radio" id="star4" name="rating" value="4" /><label for="star4"></label>
+                            <input type="radio" id="star3" name="rating" value="3" /><label for="star3"></label>
+                            <input type="radio" id="star2" name="rating" value="2" /><label for="star2"></label>
+                            <input type="radio" id="star1" name="rating" value="1" /><label for="star1"></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-12 col-lg-8 right-box">
+                    <div class="right-content shadow mb-3">
+                        <div class="box-heading pt-2 d-flex justify-content-between align-content-center">
+                            <h3>COOKS</h3>
+                            <div class="filter-head">
+                                <div class="select mb-4">
+                                    <select id="standard-select">
+                                        <option value="Selected">Sort By</option>
+                                        <option value="Option 1"> <span>Newest</span> </option>
+                                        <option value="Option 2"> <span>Date: New to Old</span> </option>
+                                        <option value="Option 3"> <span>Date: Old to New</span> </option>
+                                        <option value="Option 4"> <span>Oldest</span> </option>
+                                    </select>
+                                    <span class="focus"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="cooks shadow">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination pg-blue">
+                                <li class="page-item">
+                                    <a class="page-link" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a href="cooks.html" class="page-link">1</a></li>
+                                <li class="page-item"><a class="page-link">2</a></li>
+                                <li class="page-item"><a class="page-link">3</a></li>
+                                <li class="page-item"><a class="page-link">4</a></li>
+                                <li class="page-item"><a class="page-link">5</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <P class="text-small page-text">Showing 1899 results</P>
+                        </nav>
+
+
+                        <div class="card card-body d-flex">
+                            <div
+                                class=" d-flex media align-items-center align-items-lg-start text-center text-lg-left flex-column flex-lg-row">
+                                <div class="mr-2 mb-3 mb-lg-0 image"> <img src="img/cook1.webp" width="150" height="150"
+                                        alt="">
+                                </div>
+                                <div class="media-body">
+                                    <h6 class="media-title font-weight-semibold">Ozoz Sokoh</h6>
+                                    <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
+                                        <li class="list-inline-item text-muted">Kitchen Butterfly</li>
+                                    </ul>
+                                    <p class="mb-3">A Nigerian chef, Alex is passionate about bread, pastry and
+                                        confections. It is not secret that Alex Okes calling is in the culinary/pastry
+                                        arts. Currently based in Lagos, he is the owner at XO Boutique Bakery and an
+                                        instructor at the Culinary Academy in Lagos.
+                                    </p>
+
+                                </div>
+                                <div class="mt-3 mt-lg-0 ml-lg-3 text-center">
+                                    <h3 class="mb-0 font-weight-semibold">&#8358;10,000</h3>
+                                    <div> <i class="fa fa-star star-rating"></i> <i class="fa fa-star star-rating"></i> <i
+                                            class="fa fa-star star-rating"></i> <i class="fa fa-star star-rating"></i> </div>
+                                    <div class="text-muted">1985 reviews</div> <button type="button"
+                                        class="reg-btn mt-4"><i class="icon-cart-add mx-auto"></i> Hire me</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-body mt-3">
+                            <div
+                            class=" d-flex media align-items-center align-items-lg-start text-center text-lg-left flex-column flex-lg-row">
+                            <div class="mr-2 mb-3 mb-lg-0 image"> <img src="img/cook2.webp" width="150" height="150"
+                                    alt="">
+                            </div>
+                            <div class="media-body">
+                                <h6 class="media-title font-weight-semibold">Alex Oke</h6>
+                                <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
+                                    <li class="list-inline-item text-muted">passionate Kitchen</li>
+                                </ul>
+                                <p class="mb-3">A Nigerian chef, Alex is passionate about bread, pastry and
+                                    confections. It is not secret that Alex Okes calling is in the culinary/pastry
+                                    arts. Currently based in Lagos, he is the owner at XO Boutique Bakery and an
+                                    instructor at the Culinary Academy in Lagos.
+                                </p>
+
+                            </div>
+                            <div class="mt-3 mt-lg-0 ml-lg-3 text-center">
+                                <h3 class="mb-0 font-weight-semibold">&#8358;6,000</h3>
+                                <div> <i class="fa fa-star star-rating"></i> <i class="fa fa-star star-rating"></i> <i
+                                        class="fa fa-star star-rating"></i> <i class="fa fa-star star-rating"></i> </div>
+                                <div class="text-muted">1985 reviews</div> <button type="button"
+                                    class="reg-btn mt-4"><i class="icon-cart-add mx-auto"></i> Hire me</button>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="card card-body mt-3">
+                            <div
+                                class=" d-flex media align-items-center align-items-lg-start text-center text-lg-left flex-column flex-lg-row">
+                                <div class="mr-2 mb-3 mb-lg-0 image"> <img src="img/cook3.webp" width="150" height="150"
+                                        alt="">
+                                </div>
+                                <div class="media-body">
+                                    <h6 class="media-title font-weight-semibold">Tomi Makanjuola</h6>
+                                    <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
+                                        <li class="list-inline-item text-muted">T & M </a></li>
+                                    </ul>
+                                    <p class="mb-3">A Nigerian chef, Alex is passionate about bread, pastry and
+                                        confections. It is not secret that Alex Okes calling is in the culinary/pastry
+                                        arts. Currently based in Lagos, he is the owner at XO Boutique Bakery and an
+                                        instructor at the Culinary Academy in Lagos.
+                                    </p>
+
+                                </div>
+                                <div class="mt-3 mt-lg-0 ml-lg-3 text-center">
+                                    <h3 class="mb-0 font-weight-semibold">&#8358;8,000</h3>
+                                    <div> <i class="fa fa-star star-rating"></i> <i class="fa fa-star star-rating"></i> <i
+                                            class="fa fa-star star-rating"></i> <i class="fa fa-star star-rating"></i> </div>
+                                    <div class="text-muted">1985 reviews</div> <button type="button"
+                                        class="reg-btn mt-4"><i class="icon-cart-add mx-auto"></i> Hire me</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-body mt-3">
+                            <div
+                                class=" d-flex media align-items-center align-items-lg-start text-center text-lg-left flex-column flex-lg-row">
+                                <div class="mr-2 mb-3 mb-lg-0 image"> <img src="img/cook4.webp" width="150" height="150"
+                                        alt="">
+                                </div>
+                                <div class="media-body">
+                                    <h6 class="media-title font-weight-semibold">Tiyan Alile</h6>
+                                    <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
+                                        <li class="list-inline-item text-muted">Tiyan Foods</li>
+                                    </ul>
+                                    <p class="mb-3">A Nigerian chef, Alex is passionate about bread, pastry and
+                                        confections. It is not secret that Alex Okes calling is in the culinary/pastry
+                                        arts. Currently based in Lagos, he is the owner at XO Boutique Bakery and an
+                                        instructor at the Culinary Academy in Lagos.
+                                    </p>
+
+                                </div>
+                                <div class="mt-3 mt-lg-0 ml-lg-3 text-center">
+                                    <h3 class="mb-0 font-weight-semibold">&#8358;8,000</h3>
+                                    <div> <i class="fa fa-star star-rating"></i> <i class="fa fa-star star-rating"></i> <i
+                                            class="fa fa-star star-rating"></i> <i class="fa fa-star star-rating"></i> </div>
+                                    <div class="text-muted">1985 reviews</div> <button type="button"
+                                        class="reg-btn mt-4"><i class="icon-cart-add mx-auto"></i> Hire me</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <nav aria-label="Page navigation example" class="mt-4">
+                            <ul class="pagination pg-blue">
+                                <li class="page-item">
+                                    <a class="page-link" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a href="cooks.html" class="page-link">1</a></li>
+                                <li class="page-item"><a class="page-link">2</a></li>
+                                <li class="page-item"><a class="page-link">3</a></li>
+                                <li class="page-item"><a class="page-link">4</a></li>
+                                <li class="page-item"><a class="page-link">5</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer-1">
+        <div class="main-footer widgets-dark typo-light">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget subscribe no-box">
+                            <h5 class="widget-title"><a href="index.html"><img class="nav-logo" src="img/Logo light.png"
+                                        alt="Logo" /><span></span></a></h5>
+                            <p>C-Lanser is the best freelansing website to hire a cook and also a cleaner and also get
+                                to be hired
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Quick Links<span></span></h5>
+                            <ul class="thumbnail-widget">
+                                <li>
+                                    <div class="font-weight-light"><a href="about.html">&nbsp;About Us</a></div>
+                                </li>
+                                <li>
+                                    <div class="font-weight-light"><a href="category.html">&nbsp;Category</a></div>
+                                </li>
+                                <li>
+                                    <div class="font-weight-light"><a href="services.html">&nbsp;Services</a></div>
+                                </li>
+                                <li>
+                                    <div class="font-weight-light"><a href="contact.html">&nbsp;Contact</a></div>
+                                </li>
+                                <li>
+                                    <div class="font-weight-light"><a href="login.html">&nbsp;Dashboard</a></div>
+                                </li>
+                                <li>
+                                    <div class="font-weight-light"><a href="register.html">&nbsp;Register</a></div>
+                                </li>
+                                <!-- <li> -->
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget no-box">
+                            <h5 class="widget-title push">Follow up<span></span></h5>
+                            <ul class="social-network social-circle">
+                                <li><a href="http://facebook.com" target="blank" class="icoFacebook" title="Facebook"><i
+                                            class="fab fa-facebook icons"></i></a></li>
+                                <li><a href="http://twitter.com" target="blank" class="icoTwitter" title="Twitter"><i
+                                            class="fab fa-twitter icons"></i></a></li>
+                                <li><a href="http://linkedin.com" target="blank" class="icoLinkedin" title="Linkedin"><i
+                                            class="fab fa-linkedin icons"></i></a></li>
+                                <li><a href="http://instagram.com" target="blank" class="icoLinkedin"
+                                        title="Linkedin"><i class="fab fa-instagram icons"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="widget no-box">
+                            <h5 class="widget-title push">Terms<span></span></h5>
+                            <ul class="thumbnail-widget">
+                                <li>
+                                    <div class="font-weight-light"><a href="privacy-poliicy.html" target="blank">&nbsp;
+                                            Privacy Policy</a></div>
+                                </li>
+                                <li>
+                                    <div class="font-weight-light"><a href="users_agreement.html" target="blank">&nbsp;
+                                            User's Agreement</a></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+
+
+                    <div class="col-xs-12 col-sm-6 col-md-3">
+                        <div class="widget no-box">
+                            <h5 class="widget-title">Newsletter<span></span></h5>
+                            <p>Keep up with the latest news from us.</p>
+                            <div class="emailfield">
+                                <form name="contact" method="POST" data-netlify="true">
+                                <input type="text" name="email" placeholder="Enter your email">
+                                <!-- <input name="uri" type="hidden" value="arabiantheme"> -->
+                                <!-- <input name="loc" type="hidden" value="en_US"> -->
+                                <input class="submitbutton ripplelink" type="submit" value="Subscribe">
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="p-20">Copyright &copy; <span id="year"></span>. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <!-- <script src="js/jquery-1.12.0.min.js"></script> -->
+</body>
+
+</html>

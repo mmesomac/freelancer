@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --light: #f4f4f4;
+  --white: #fff;
+  --primary: #007acc;
+  --gray: #ccc;
+  --background: #f0f6fc;
+  --black: #000;
+  --dark-gray: #8d97ad;
+}
+
+#progress {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 50px;
+  width: 50px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 999;
+}
+#progress-value {
+  display: block;
+  height: calc(100% - 12px);
+  width: calc(100% - 12px);
+  background-color: var(--white);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  color: #001a2e;
+  color: var(--primary);
+  z-index: 999;
+}
+
+.icon {
+  font-size: 1.4rem;
+}

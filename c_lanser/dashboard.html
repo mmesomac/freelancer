@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  
+  <head>
+    <meta charset="UTF-8">
+    <title> User's Dashboard </title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/scroll.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+
+<body>
+  <div id="progress">
+    <span id="progress-value"><i class="fas fa-angle-double-up icon"></i></span>
+  </div>
+
+   <!-- NAVBAR -->
+   <nav class="main-nav navbar navbar-expand-md fixed-top navbar-light bg-white">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"><img class="nav-logo" src="img/Logo2.png" alt="Logo" /></a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navcollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navcollapse">
+            <ul class="nav-ul navbar-nav ml-auto">
+                <li class="nav-li nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+
+                <li class="nav-li nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-li nav-item dropdown hover">
+                    <a href="category.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Category</a>
+                    <div class="dropdown-menu">
+                        <a href="cooks.html" class="dropdown-item">Cooks</a>
+                        <a href="cleaners.html" class="dropdown-item">Cleaners</a>
+                    </div>
+                </li>
+
+                <li class="nav-li nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+
+                <li class="nav-li nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+
+                <li class="nav-li nav-item">
+                    <a href="login.html" class="nav-link mx-md-3 d-none d-md-inline-block">Log In</a>
+                </li>
+            </ul>
+
+            <a href="login.html" class="reg-btn d-md-none">Log In</a>
+            
+            <a href="register.html" class="reg-btn">Register</a>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+
+  <div class="sidebar">
+    <div class="logo-details">
+      <span class="logo_name"><img class="dash-logo" src="img/Logo light.png" alt=""></span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#" class="active">
+            <i class="fa-solid fa-grid-2 font"></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <!-- <li>
+          <a href="#">
+            <i class="fa-solid fa-box-archive font"></i>
+            <span class="links_name">Product</span>
+          </a>
+        </li> -->
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-list font"></i>
+            <span class="links_name">Order list</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-chart-pie font"></i>
+            <span class="links_name">Analytics</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-book-blank font"></i>
+            <span class="links_name">Total order</span>
+          </a>
+        </li>
+        
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-message-lines font"></i>
+            <span class="links_name">Messages</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-heart font"></i>
+            <span class="links_name">Favrorites</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-gear font"></i>
+            <span class="links_name">Setting</span>
+          </a>
+        </li>
+        <li>
+          <a href="login.html">
+            <i class="fa-solid fa-right-from-bracket font"></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+       <a href="#"><i class="bx bx-menu fa-solid fa-bars sidebarBtn pr-2"></i></a> 
+        <span class="dashboard">Dashboard</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class="fa-solid fa-magnifying-glass fonts"></i>
+      </div>
+      <div class="profile-details">
+        <img src="img/profile.webp" alt="">
+        <span class="admin_name">Alex Victor</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </nav>
+
+    <div class="home-content">
+      <div class="overview-boxes">
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic text-center">Total Order</div>
+            <div class="number">0 <!-- 40,876 --> </div>
+            <div class="indicator">
+              <i class="fa-solid fa-square-up pr-2"></i>
+              <span class="text">Up from yesterday</span>
+            </div>
+          </div>
+          <i class="fa-solid fa-cart-shopping cart"></i>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total Sales</div>
+            <div class="number">0 <!--38,876--></div>
+            <div class="indicator">
+              <i class="fa-solid fa-square-up pr-2"></i>
+              <span class="text">Up from yesterday</span>
+            </div>
+          </div>
+          <i class="fa-solid fa-cart-plus cart two"></i>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total Profit</div>
+            <div class="number">&#8358;0.00<!--12,876--></div>
+            <div class="indicator">
+              <i class="fa-solid fa-square-up pr-2"></i>
+              <span class="text">Up from yesterday</span>
+            </div>
+          </div>
+          <i class="fas fa-dolly-flatbed cart three"></i>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total Return</div>
+            <div class="number">0<!--11,086--></div>
+            <div class="indicator">
+              <i class="fa-solid fa-square-down pr-2"></i>
+              <span class="text">Down From Today</span>
+            </div>
+          </div>
+          <i class="fa-solid fa-cart-arrow-down cart four"></i>
+        </div>
+      </div>
+
+      <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title">Recent Services</div>
+          <div class="sales-details">
+            <ul class="details">
+              <li class="topic">Date</li>
+              <!-- <li><a href="#">24 Apr 2022</a></li>
+              <li><a href="#">24 Apr 2022</a></li>
+              <li><a href="#">20 Apr 2022</a></li>
+              <li><a href="#">24 Apr 2022</a></li>
+              <li><a href="#">25 Apr 2022</a></li>
+              <li><a href="#">24 Apr 2022</a></li>
+              <li><a href="#">25 Apr 2022</a></li>
+              <li><a href="#">24 Apr 2022</a></li>
+              <li><a href="#">25 Apr 2022</a></li> -->
+            </ul>
+            <ul class="details">
+            <li class="topic">Customer</li>
+            <!-- <li><a href="#">Alex Doe</a></li>
+            <li><a href="#">David Mart</a></li>
+            <li><a href="#">Roe Parter</a></li>
+            <li><a href="#">Diana Penty</a></li>
+            <li><a href="#">Martin Paw</a></li>
+            <li><a href="#">Doe Alex</a></li>
+            <li><a href="#">Aiana Lexa</a></li>
+            <li><a href="#">Rexel Mags</a></li>
+             <li><a href="#">Tiana Loths</a></li> -->
+          </ul>
+          <ul class="details">
+            <li class="topic">Sales</li>
+            <!-- <li><a href="#">Delivered</a></li>
+            <li><a href="#">Pending</a></li>
+            <li><a href="#">Returned</a></li>
+            <li><a href="#">Delivered</a></li>
+            <li><a href="#">Pending</a></li>
+            <li><a href="#">Returned</a></li>
+            <li><a href="#">Delivered</a></li>
+             <li><a href="#">Pending</a></li>
+            <li><a href="#">Delivered</a></li> -->
+          </ul>
+          <ul class="details">
+            <li class="topic">Total</li>
+            <!-- <li><a href="#">&#8358;20,000</a></li>
+            <li><a href="#">&#8358;8,000</a></li>
+            <li><a href="#">&#8358;10,000</a></li>
+            <li><a href="#">&#8358;6,500</a></li>
+            <li><a href="#">&#8358;10,000</a></li>
+            <li><a href="#">&#8358;5,000</a></li>
+            <li><a href="#">&#8358;15,000</a></li>
+             <li><a href="#">&#8358;10,000</a></li>
+             <li><a href="#">&#8358;5,000</a></li> -->
+          </ul>
+          </div>
+          <!-- <div class="button">
+            <a href="#">See All</a>
+          </div> -->
+        </div>
+        <div class="top-sales box">
+          <div class="title">Top Services</div>
+          <!-- <ul class="top-sales-details">
+            <li>
+            <a href="#">
+              <img src="img/food1.webp" alt="">
+              <span class="product">Stew</span>
+            </a>
+            <span class="price">&#8358;6000</span>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/food3.webp" alt="">
+              <span class="product">Jellof Rice </span>
+            </a>
+            <span class="price">&#8358;8000</span>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/cleaning1.webp" alt="">
+              <span class="product">Home Cleaning</span>
+            </a>
+            <span class="price">&#8358;5000</span>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/cleaning2.webp" alt="">
+              <span class="product">Industrial cleaning</span>
+            </a>
+            <span class="price">&#8358;20,000</span>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/food2.webp" alt="">
+              <span class="product">Fried Chicken</span>
+            </a>
+            <span class="price">&#8358;10,000</span>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/cleaning3.webp" alt="">
+              <span class="product">Commercial cleaning</span>
+            </a>
+            <span class="price">&#8358;15,000</span>
+            <li>
+              <a href="#">
+                <img src="img/food3.webp" alt="">
+                <span class="product">Jellof Rice </span>
+              </a>
+              <span class="price">&#8358;8000</span>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/food3.webp" alt="">
+                <span class="product">Jellof Rice </span>
+              </a>
+              <span class="price">&#8358;8000</span>
+            </li>
+          </ul> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+
+<!-- FOOTER END -->
+
+
+
+
+
+
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+
+</body>
+</html>

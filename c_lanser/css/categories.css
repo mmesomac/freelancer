@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --light: #f4f4f4;
+  --white: #fff;
+  --primary: #007acc;
+  --gray: #ccc;
+  --background: #f0f6fc;
+  --black: #000;
+  --dark-gray: #8d97ad;
+}
+
+html,
+body {
+  background: var(--background);
+  outline: none;
+}
+
+/* Utility Classes */
+.page-text {
+  line-height: 0;
+  font-size: 0.8rem;
+  margin-bottom: 20px;
+}
+
+.star-rating {
+  color: #f9df4a;
+}
+
+/* COOK SECTION */
+
+#cook-showcase {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
+    url(../img/cook_showcase.jpg) center center/cover no-repeat;
+  color: var(--white);
+  margin-top: 60px;
+  text-align: center;
+  padding: 20px 0px;
+  line-height: 1;
+}
+
+#cook-showcase .head > p {
+  font-size: 1.5rem;
+}
+
+#freelancer-section {
+  margin: 50px auto;
+}
+
+#freelancer-section .right-box .cooks {
+  background: var(--white);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 20px;
+  border-bottom: 4px solid var(--primary);
+}
+
+#freelancer-section .left-box .left-content,
+#freelancer-section .right-box .right-content {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 20px;
+  border-top: 4px solid var(--primary);
+  border-bottom: 4px solid var(--primary);
+  /* box-shadow: 1px 2px 4px var(--gray); */
+  /* margin-right: 10px; */
+  /* margin-left: auto; */
+}
+
+#freelancer-section .right-box .right-content {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom: none;
+}
+
+.form-control {
+  outline: none !important;
+  border: 1.9px solid var(--gray) !important;
+  transition: all 0.5s ease;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.form-control:focus {
+  border: 1.9px solid var(--primary) !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#freelancer-section .left-box .left-content .filter {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#freelancer-section .left-box .left-content .filter-title {
+  font-size: 1.2rem;
+}
+
+#freelancer-section .left-box .left-content .filter-sub {
+  color: var(--primary);
+}
+
+#freelancer-section .left-box .left-content .location .location-title,
+#freelancer-section .left-box .left-content .keyword .keyword-title,
+#freelancer-section .left-box .left-content label {
+  font-size: 0.8rem;
+}
+
+/*  */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  z-index: 1;
+  outline: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+  display: grid;
+  grid-template-areas: 'select';
+  align-items: center;
+  position: relative;
+  min-width: 15ch;
+  max-width: 100%;
+  border: 1px solid var(--dark-gray);
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+
+.select select,
+.select::after {
+  grid-area: select;
+}
+
+.select:not(.select--multiple)::after {
+  content: '';
+  justify-self: end;
+  width: 0.8em;
+  height: 0.5em;
+  background-color: var(--primary);
+  -webkit-clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+
+select:focus + .focus {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  border: 1.8px solid var(--dark-gray);
+  border-radius: inherit;
+}
+
+/* Rating */
+.rating label {
+  /* float: none; */
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* .rating label:not(:first-of-type) {
+  padding-right: 0.5px;
+} */
+
+.rating label:before {
+  content: '★';
+  font-size: 25px;
+  color: #cccccc;
+  line-height: 1;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating input:checked ~ label:before,
+.rating:not(:checked) > label:hover:before,
+.rating:not(:checked) > label:hover ~ label:before {
+  color: #f9df4a;
+}
+
+/* RIGHT SECTION */
+#freelancer-section .right-box .right-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  border: none;
+  background: var(--white);
+  border-bottom: 1px solid var(--gray);
+}
+
+/* .card:last-child {
+  border: none;
+} */
+
+.card .media .image img {
+  /* border-radius: 100%; */
+  margin-top: 10px;
+}
+
+/* Abstract */
+/* .mt-50 {
+  margin-top: 50px
+}
+
+.mb-50 {
+  margin-bottom: 50px
+}
+
+.bg-teal-400 {
+  background-color: #26a69a
+}
+
+a {
+  text-decoration: none !important
+}
+
+.fa {
+  color: red
+} */
+/* Abtract End */
+
+/* CLEANERS */
+#cleaner-showcase {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
+    url(../img/cleaner-showcase2.jpg) 50% center/cover no-repeat;
+  color: var(--white);
+  margin-top: 60px;
+  text-align: center;
+  padding: 20px 0px;
+  line-height: 1;
+}
